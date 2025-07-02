@@ -57,5 +57,40 @@ ul li {
   margin-bottom: 0.5rem;
 }
 
+/* Content container tweaks */
+.main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Improve blog post headers */
+.post-title, .page-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #0e0e0e;
+}
+
+/* Make footer cleaner and smaller */
+.site-footer {
+  font-size: 0.85rem;
+  color: #666;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 1px solid #eee;
+  margin-top: 4rem;
+}
+
+/* Add breathing room to project sections */
+h3 + p {
+  margin-top: -0.5rem;
+}
+
+/* Fine-tune homepage title */
+h1 {
+  font-size: 2.6rem;
+}
+
 /* Optional: import additional custom components if needed */
 // @import "../_sass/_custom";
