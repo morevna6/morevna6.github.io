@@ -175,6 +175,42 @@ h1 {
   }
 }
 
+/* Dark mode styles */
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark a {
+  color: #80b3ff;
+  border-bottom: 1px solid #444;
+}
+body.dark a:hover {
+  border-bottom: 1px solid #80b3ff;
+}
+
+body.dark .site-header {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+
+body.dark .site-footer {
+  background-color: #1e1e1e;
+  color: #aaa;
+  border-top: 1px solid #333;
+}
+
+body.dark .site-footer::after {
+  color: #666;
+}
+
+body.dark h1, 
+body.dark h2, 
+body.dark h3, 
+body.dark h4 {
+  color: #f1f1f1;
+}
+
 
 /* Optional: import additional custom components if needed */
 // @import "../_sass/_custom";
