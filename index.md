@@ -4,7 +4,7 @@ title: "F. Günışığı Aydoğan"
 description: "Independent Researcher in Cognitive Systems & AI | Computer Programming Student"
 ---
 
-“Not everything that is felt is visible. Not everything that is real is measurable.”
+<em>“Not everything that is felt is visible. Not everything that is real is measurable.”</em>
 
 Welcome to The Signal.  
 The personal research platform of F. Günışığı Aydoğan  
