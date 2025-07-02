@@ -21,7 +21,7 @@ This is a home for what I build; both what can be measured, and what cannot.
 <h3><strong>Momentum</strong></h3>
 A speculative framework exploring memory, perception, and signal resonance; through EEG logging, ambient field tracking, and non-linear time modeling.
 
-<h3><strong></strong></h3>Dupsy</strong>/h3
+<h3><strong>Dupsy</strong></h3>
 A lightweight desktop tool for intelligent Excel duplicate detection, with granular export and similarity-based matching. Built for accuracy, speed, and offline use.
 
 ### Solace System  
