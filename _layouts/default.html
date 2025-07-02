@@ -6,7 +6,8 @@
     <title>{{ page.title }} | {{ site.title }}</title>
 
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
-    <script defer src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
+    <!-- ✅ FIXED: use correct JS filename -->
+    <script defer src="{{ '/assets/js/darkmode-toggle.js' | relative_url }}"></script>
   </head>
 
   <body class="{{ site.theme_config.mode | default: 'light' }}">
@@ -31,6 +32,5 @@
     <footer class="site-footer">
       {{ site.title }}
     </footer>
-    <script src="{{ '/assets/js/darkmode-toggle.js' | relative_url }}"></script>
   </body>
 </html>
