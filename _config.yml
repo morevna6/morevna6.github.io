@@ -1,6 +1,5 @@
 theme: minima
-google_fonts:
-  - Inter
+
 header_pages:
   - index.md
   - about.md
@@ -8,9 +7,12 @@ header_pages:
   - prototype-releases.md
   - pathsofdestiny.md
   - lablog.md
+
 sass:
   style: compressed
 
-include:
-  - assets/css/custom.css
+google_fonts:
+  - Inter
 
+include:
+  - assets/css
