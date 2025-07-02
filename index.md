@@ -8,9 +8,9 @@ description: "Independent Researcher in Cognitive Systems & AI | Computer Progra
 
 <strong><em>“Not everything that is felt is visible. Not everything that is real is measurable.”</em></strong>
 
-Welcome to The Signal.  
-The personal research platform of F. Günışığı Aydoğan  
-Computer Programming Student · Independent Systems Researcher
+<p>Welcome to The Signal.<br>
+The personal research platform of F. Günışığı Aydoğan<br>
+Computer Programming Student · Independent Systems Researcher</p>
 
 I build systems; functional, cognitive, speculative.
 
