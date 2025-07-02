@@ -92,5 +92,30 @@ h1 {
   font-size: 2.6rem;
 }
 
+/* Navigation bar tweaks */
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+}
+
+.site-nav {
+  float: right;
+  font-size: 0.95rem;
+}
+
+.site-nav a {
+  margin-left: 1.2rem;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+
+.site-nav a:hover {
+  border-bottom: 1px solid #888;
+}
+
 /* Optional: import additional custom components if needed */
 // @import "../_sass/_custom";
