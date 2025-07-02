@@ -4,7 +4,7 @@ title: "F. Günışığı Aydoğan"
 description: "Independent Researcher in Cognitive Systems & AI | Computer Programming Student"
 ---
 
-<h3><strong><em>Independent Researcher in Cognitive Systems & AI | Computer Programming Student</em></strong></h3>
+<h3><strong>Independent Researcher in Cognitive Systems & AI | Computer Programming Student</strong></h3>
 
 <strong><em>“Not everything that is felt is visible. Not everything that is real is measurable.”</em></strong>
 
