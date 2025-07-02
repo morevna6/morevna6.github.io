@@ -3,34 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ page.title }} | {{ site.title }}</title>
+    <title>F. Günışığı Aydoğan — Welcome</title>
 
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
-    <!-- ✅ FIXED: use correct JS filename -->
-    <script defer src="{{ '/assets/js/darkmode-toggle.js' | relative_url }}"></script>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script defer src="/assets/js/darkmode-toggle.js"></script>
   </head>
 
-  <body class="{{ site.theme_config.mode | default: 'light' }}">
+  <body>
     <header class="site-header">
       <div class="wrapper">
-        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <a class="site-title" href="/">F. Günışığı Aydoğan</a>
         <nav class="site-nav">
-          {% for page in site.pages %}
-            {% if page.title %}
-              <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
-            {% endif %}
-          {% endfor %}
+          <a href="/index.html">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/momentum.html">Momentum</a>
+          <a href="/prototype-releases.html">Prototype Releases</a>
+          <a href="/pathsofdestiny.html">Paths of Destiny</a>
+          <a href="/lablog.html">Research Log</a>
           <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
         </nav>
       </div>
     </header>
 
     <main class="main">
-      {{ content }}
+      <!-- Your content here -->
     </main>
 
     <footer class="site-footer">
-      {{ site.title }}
+      © 2025 F. Günışığı Aydoğan — All rights reserved.
     </footer>
   </body>
 </html>
