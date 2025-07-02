@@ -117,5 +117,26 @@ h1 {
   border-bottom: 1px solid #888;
 }
 
+/* Enhanced footer styling */
+.site-footer {
+  font-size: 0.85rem;
+  color: #888;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid #ddd;
+  margin-top: 4rem;
+  line-height: 1.6;
+}
+
+.site-footer::after {
+  content: "© 2025 F. Günışığı Aydoğan — All rights reserved.";
+  display: block;
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
 /* Optional: import additional custom components if needed */
 // @import "../_sass/_custom";
