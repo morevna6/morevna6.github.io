@@ -1,6 +1,5 @@
 ---
 layout: default
-layout: home
 title: "Welcome to The Signal"
 description: "F. Günışığı Aydoğan | Independent Researcher in Cognitive Systems & AI | Computer Programming Student"
 ---
