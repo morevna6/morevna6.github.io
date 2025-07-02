@@ -43,11 +43,8 @@ A multi-layered narrative and game world exploring trauma, resistance, and cosmi
   <li><strong>Anomalies</strong> — things I can’t define yet, but feel real</li>
 </ul>
 
-<em>The work is still growing.</em><br>
-<em>This site is still evolving.</em><br>
-<em>But the signal is live.</em><br>
-<em>And the world is already listening.</em><br>
-<em>Welcome.</em>
-
-
-<em>Welcome.</em>
+<p><em>The work is still growing.</em></p>
+<p><em>This site is still evolving.</em></p>
+<p><em>But the signal is live.</em></p>
+<p><em>And the world is already listening.</em></p>
+<p><em>Welcome.</em></p>
