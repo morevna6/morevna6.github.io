@@ -38,9 +38,9 @@ A multi-layered narrative and game world exploring trauma, resistance, and cosmi
 - **Narrative Work** — fragments and expansions from Paths of Destiny and beyond  
 - **Anomalies** — things I can’t define yet, but feel real  
 
-The work is still growing.  
-This site is still evolving.  
-But the signal is live.  
-And the world is already listening.
+<em>The work is still growing.</em>  
+<em>This site is still evolving.</em>  
+<em>But the signal is live.</em>  
+<em>And the world is already listening.</em>
 
-Welcome.
+<em>Welcome.</em>
