@@ -12,11 +12,12 @@ description: "Independent Researcher in Cognitive Systems & AI | Computer Progra
 The personal research platform of F. Günışığı Aydoğan<br>
 Computer Programming Student · Independent Systems Researcher</p>
 
-I build systems; functional, cognitive, speculative.
+<p>I build systems; functional, cognitive, speculative.</p>
 
-This space is where my tools, code, ideas, and inner questions converge. My work spans from mental health technology to AI architecture, from data validation ecosystems to narrative frameworks shaped by fate and memory. Some of it runs on Python. Some of it runs on fire, dream, and signal.
+<p>This space is where my tools, code, ideas, and inner questions converge. My work spans from mental health technology to AI architecture, from data validation ecosystems to narrative frameworks shaped by fate and memory. Some of it runs on Python. Some of it runs on fire, dream, and signal.</p>
 
-This is a home for what I build; both what can be measured, and what cannot.
+<p>This is a home for what I build; both what can be measured, and what cannot.</p>
+
 
 <h3><strong>Projects</strong></h3>
 
@@ -42,9 +43,11 @@ A multi-layered narrative and game world exploring trauma, resistance, and cosmi
   <li><strong>Anomalies</strong> — things I can’t define yet, but feel real</li>
 </ul>
 
-<em>The work is still growing.</em>  
-<em>This site is still evolving.</em>  
-<em>But the signal is live.</em>  
-<em>And the world is already listening.</em>
+<em>The work is still growing.</em><br>
+<em>This site is still evolving.</em><br>
+<em>But the signal is live.</em><br>
+<em>And the world is already listening.</em><br>
+<em>Welcome.</em>
+
 
 <em>Welcome.</em>
