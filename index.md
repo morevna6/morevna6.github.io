@@ -16,12 +16,12 @@ This space is where my tools, code, ideas, and inner questions converge. My work
 
 This is a home for what I build; both what can be measured, and what cannot.
 
-## Projects
+<h3><strong>Projects</strong></h3>
 
-### Momentum  
+<h3><strong>Momentum</strong></h3>
 A speculative framework exploring memory, perception, and signal resonance; through EEG logging, ambient field tracking, and non-linear time modeling.
 
-### Dupsy  
+<h3><strong></strong></h3>Dupsy</strong>/h3>
 A lightweight desktop tool for intelligent Excel duplicate detection, with granular export and similarity-based matching. Built for accuracy, speed, and offline use.
 
 ### Solace System  
