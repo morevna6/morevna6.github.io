@@ -6,4 +6,9 @@ header_pages:
   - prototype-releases.md
   - pathsofdestiny.md
   - lablog.md
+sass:
+  style: compressed
+
+include:
+  - assets/css/custom.css
 
