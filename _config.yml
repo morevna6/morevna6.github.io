@@ -1,1 +1,9 @@
 theme: minima
+header_pages:
+  - index.md
+  - about.md
+  - momentum.md
+  - prototype/releases.md
+  - pathsofdestiny
+  - lablod.md
+
