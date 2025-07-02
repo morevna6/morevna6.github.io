@@ -6,10 +6,10 @@ description: "Independent Researcher in Cognitive Systems & AI | Computer Progra
 
 <h4><strong>Independent Researcher in Cognitive Systems & AI | Computer Programming Student</strong></h4>
 
-<strong><em>“Not everything that is felt is visible. Not everything that is real is measurable.”</em></strong>
+<em>“Not everything that is felt is visible. Not everything that is real is measurable.”</em>
 
-<p>Welcome to The Signal.<br>
-The personal research platform of F. Günışığı Aydoğan<br>
+<h3><strong>Welcome to The Signal.</strong></h3>
+<p>The personal research platform of F. Günışığı Aydoğan<br>
 Computer Programming Student · Independent Systems Researcher</p>
 
 <p>I build systems; functional, cognitive, speculative.</p>
@@ -19,7 +19,7 @@ Computer Programming Student · Independent Systems Researcher</p>
 <p>This is a home for what I build; both what can be measured, and what cannot.</p>
 
 
-<h3><strong>Projects</strong></h3>
+<h2><strong>Projects</strong></h2>
 
 <h3><strong>Momentum</strong></h3>
 A speculative framework exploring memory, perception, and signal resonance; through EEG logging, ambient field tracking, and non-linear time modeling.
