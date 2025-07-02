@@ -34,11 +34,13 @@ A multi-layered narrative and game world exploring trauma, resistance, and cosmi
 
 <h2><strong>What You'll Find Here</strong></h2>
 
-- **Research Logs** — reflections, signal theories, design strategies, and thoughts on perception  
-- **Project Updates** — technical progress across my tools and systems  
-- **Experimental Blogs** — ideas in transit: partially formed, provocatively real  
-- **Narrative Work** — fragments and expansions from Paths of Destiny and beyond  
-- **Anomalies** — things I can’t define yet, but feel real  
+<ul>
+  <li><strong>Research Logs</strong> — reflections, signal theories, design strategies, and thoughts on perception</li>
+  <li><strong>Project Updates</strong> — technical progress across my tools and systems</li>
+  <li><strong>Experimental Blogs</strong> — ideas in transit: partially formed, provocatively real</li>
+  <li><strong>Narrative Work</strong> — fragments and expansions from Paths of Destiny and beyond</li>
+  <li><strong>Anomalies</strong> — things I can’t define yet, but feel real</li>
+</ul>
 
 <em>The work is still growing.</em>  
 <em>This site is still evolving.</em>  
