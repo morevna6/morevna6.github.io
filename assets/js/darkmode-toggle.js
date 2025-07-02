@@ -4,6 +4,7 @@
   toggle.innerText = "🌙";
   toggle.id = "theme-toggle";
   toggle.setAttribute("aria-label", "Toggle dark mode");
+  
   toggle.style.cssText = `
     position: absolute;
     top: 1.2rem;
