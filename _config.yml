@@ -1,4 +1,6 @@
 theme: minima
+google_fonts:
+  - Inter
 header_pages:
   - index.md
   - about.md
