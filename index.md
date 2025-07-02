@@ -1,7 +1,7 @@
 ---
 layout: home
-title: "F. Günışığı Aydoğan"
-description: "Independent Researcher in Cognitive Systems & AI | Computer Programming Student"
+title: "Welcome to The Signal"
+description: "F. Günışığı Aydoğan | Independent Researcher in Cognitive Systems & AI | Computer Programming Student"
 ---
 
 <h4><strong>Independent Researcher in Cognitive Systems & AI | Computer Programming Student</strong></h4>
