@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title }} | {{ site.title }}</title>
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+    <script defer src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
+  </head>
+
+  <body class="{{ site.theme_config.mode | default: 'light' }}">
+    <header class="site-header">
+      <div class="wrapper">
+        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <nav class="site-nav">
+          {% for page in site.pages %}
+            {% if page.title %}
+              <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
+            {% endif %}
+          {% endfor %}
+          <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      {{ site.title }}
+    </footer>
+  </body>
+</html>
