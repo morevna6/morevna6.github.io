@@ -1,7 +1,7 @@
 ---
 layout: home
 title: "F. Günışığı Aydoğan"
-description: "Independent Systems Research"
+description: "Independent Researcher in Cognitive Systems & AI | Computer Programming Student"
 ---
 
 “Not everything that is felt is visible. Not everything that is real is measurable.”
@@ -24,13 +24,13 @@ A speculative framework exploring memory, perception, and signal resonance; thro
 <h3><strong>Dupsy</strong></h3>
 A lightweight desktop tool for intelligent Excel duplicate detection, with granular export and similarity-based matching. Built for accuracy, speed, and offline use.
 
-### Solace System  
+<h3><strong>Solace System</strong></h3>  
 A data collection and validation infrastructure designed to support real-world workflows in high-integrity environments. Includes dynamic admin panels, SQL tooling, and fair-based data mapping.
 
-### Paths of Destiny  
+<h3><strong>Paths of Destiny</strong></h3>  
 A multi-layered narrative and game world exploring trauma, resistance, and cosmic inheritance through mythic storytelling and AI-integrated interaction. Where prophecy meets perception.
 
-## What You’ll Find Here
+<h2><strong>What You'll Find Here</strong></h2>
 
 - **Research Logs** — reflections, signal theories, design strategies, and thoughts on perception  
 - **Project Updates** — technical progress across my tools and systems  
