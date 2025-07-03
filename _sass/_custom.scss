@@ -25,24 +25,28 @@ h3 {
   font-size: 1.5rem;
 }
 
-/* Always dark theme */
 body {
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: #202124;
+  color: #E8EAED;
 }
 
-/* Links */
+/* Site header/nav background */
+header, .site-nav {
+  background-color: #343541;
+}
+
+/* Content area (cards, code blocks, quotes) */
+main, pre, code, blockquote {
+  background-color: #2E303C;
+}
+
+/* Link colors */
 a {
-  color: #81a1c1;
+  color: #58A6FF;
 }
 
-/* Headings in dark */
-h1, h2, h3, h4, h5, h6 {
-  color: #eceff4;
-}
-
-/* Invert footers or other bg if needed */
+/* Footer text */
 footer {
-  color: #a0a0a0;
+  color: #9AA0A6;
 }
 
