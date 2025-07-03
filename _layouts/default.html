@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+</head>
+<body>
+
+<header>
+  <h1>{{ page.title }}</h1>
+  <nav>
+    <a href="{{ '/' | relative_url }}">Home</a> |
+    <a href="{{ '/lablog/' | relative_url }}">Lablog</a> |
+    <a href="{{ '/momentum/' | relative_url }}">Momentum</a> |
+    <a href="{{ '/pathsofdestiny/' | relative_url }}">Paths of Destiny</a> |
+    <a href="{{ '/prototype-releases/' | relative_url }}">Prototypes</a> |
+    <a href="{{ '/about/' | relative_url }}">About</a>
+  </nav>
+</header>
+
+<main>
+  {{ content }}
+</main>
+
+<footer>
+  <p>© 2025 F. Günışığı Aydoğan</p>
+</footer>
+
+</body>
+</html>
