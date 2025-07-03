@@ -3,3 +3,13 @@ author: F. Günışığı Aydoğan
 description: Independent Researcher in Cognitive Systems & AI
 markdown: kramdown
 theme: minima
+
+header_pages:
+  - index.md
+  - lablog.md
+  - momentum.md
+  - paths-of-destiny.md
+  - prototypes.md
+  - releases.md
+  - about.md
+  - contact.md
