@@ -1,13 +1,13 @@
-/* Navbar: keep links on one line and scroll if needed */
+/* Navbar spacing and layout */
 .site-nav {
   display: flex;
-  flex-wrap: nowrap;       /* DON’T wrap items to a new line */
-  overflow-x: auto;        /* Allow horizontal scroll when too wide */
-  gap: 8px;                /* Space between links */
-  justify-content: center; /* Center in the header */
-  font-size: 0.85em;       /* You can tweak this as needed */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 8px;
+  justify-content: center;
+  font-size: 0.85em;
 }
 
 .site-nav a {
-  white-space: nowrap;     /* Prevent individual links from breaking */
+  white-space: nowrap;
 }
