@@ -1,6 +1,5 @@
 ---
 title: "Welcome to The Signal"
-permalink: /welcome-to-the-signal/
 ---
 
 <h4><strong>Independent Researcher in Cognitive Systems & AI | Computer Programming Student</strong></h4>
