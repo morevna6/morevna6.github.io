@@ -1,5 +1,6 @@
 ---
 title: "Momentum"
+permalink: /momentum/
 ---
 
 # Momentum
