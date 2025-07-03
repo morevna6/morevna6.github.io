@@ -24,3 +24,25 @@ h2 {
 h3 {
   font-size: 1.5rem;
 }
+
+/* Always dark theme */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Links */
+a {
+  color: #81a1c1;
+}
+
+/* Headings in dark */
+h1, h2, h3, h4, h5, h6 {
+  color: #eceff4;
+}
+
+/* Invert footers or other bg if needed */
+footer {
+  color: #a0a0a0;
+}
+
