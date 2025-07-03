@@ -1,7 +1,5 @@
-
 ---
 ---
 
-@import "minima";
-
-@import "css/custom";
+@import "minima";        // load the theme’s defaults
+@import "css/custom";    // now imports /assets/css/_custom.scss
