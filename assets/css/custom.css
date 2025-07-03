@@ -1,1 +1,13 @@
+/* Navbar spacing and layout */
+.site-nav {
+  display: flex;
+  flex-wrap: wrap; /* Allows the links to flow to the next line if needed */
+  gap: 12px; /* Space between links */
+  justify-content: center; /* Center the whole navbar horizontally */
+}
+
+.site-nav a {
+  white-space: nowrap; /* Keeps each link on a single line */
+  font-size: 0.95em; /* Slightly smaller text for better fit (optional) */
+}
 
