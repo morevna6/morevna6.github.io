@@ -2,9 +2,9 @@
 .site-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 8px; /* Reduced from 12px to 8px */
   justify-content: center;
-  font-size: 0.85em;  /* Shrinks the whole nav bar */
+  font-size: 0.85em;
 }
 
 .site-nav a {
