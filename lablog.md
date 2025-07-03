@@ -1,5 +1,5 @@
 ---
-title: "Lab"
+title: "Research Lab"
 permalink: /lablog/
 ---
 
