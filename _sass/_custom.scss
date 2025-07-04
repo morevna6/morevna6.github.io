@@ -25,28 +25,36 @@ h3 {
   font-size: 1.5rem;
 }
 
+
+/* Professional Dark Mode */
+
+/* Body background and base text color */
 body {
-  background-color: #202124;
-  color: #E8EAED;
+  background-color: #1e1e1e;   /* deep charcoal */
+  color: #e4e4e4;              /* soft light grey */
 }
 
-/* Site header/nav background */
+/* Header and navigation bar */
 header, .site-nav {
-  background-color: #343541;
+  background-color: #2a2a2a;   /* slightly lighter grey for separation */
 }
 
-/* Content area (cards, code blocks, quotes) */
+/* Main content area, code blocks, quotes */
 main, pre, code, blockquote {
-  background-color: #2E303C;
+  background-color: #242424;   /* dark, but distinct from body bg */
 }
 
-/* Link colors */
+/* Headings - clean white for contrast */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+}
+
+/* Links - calm, soft blue */
 a {
-  color: #58A6FF;
+  color: #4ea1ff;              /* muted electric blue */
 }
 
-/* Footer text */
+/* Footer text - dimmer grey */
 footer {
-  color: #9AA0A6;
+  color: #888888;
 }
-
