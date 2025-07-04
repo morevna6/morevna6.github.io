@@ -3,7 +3,6 @@ title: "Momentum"
 permalink: /momentum/
 ---
 
-# Momentum
 
 **Momentum** is a speculative framework exploring memory, perception, and signal resonance.
 
