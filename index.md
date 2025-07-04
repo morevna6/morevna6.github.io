@@ -21,7 +21,7 @@ Computer Programming Student · Independent Systems Researcher</p>
 
 <h2><strong>Projects</strong></h2>
 <hr>
-
+<p></p>
 <h3><strong>Momentum</strong></h3>
 A speculative framework exploring memory, perception, and signal resonance; through EEG logging, ambient field tracking, and non-linear time modeling.
 
