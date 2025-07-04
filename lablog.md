@@ -3,8 +3,6 @@ title: "Research Lab"
 permalink: /lablog/
 ---
 
-<h2>Research Lab</h2>
-
 <p>Welcome to my research log. Here are my latest posts:</p>
 
 <ul>
