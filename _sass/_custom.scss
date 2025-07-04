@@ -1,4 +1,7 @@
-/* Navbar spacing and layout */
+/* -------------------------------------
+   General Layout
+------------------------------------- */
+
 .site-nav {
   display: flex;
   flex-wrap: nowrap;
@@ -6,13 +9,17 @@
   gap: 8px;
   justify-content: center;
   font-size: 0.85em;
+
+  a {
+    white-space: nowrap;
+    color: #e0e0e0 !important;
+    font-weight: 500;
+  }
 }
 
-.site-nav a {
-  white-space: nowrap;
-}
-
-/* Slightly larger headers */
+/* -------------------------------------
+   Headings
+------------------------------------- */
 h1 {
   font-size: 2.5rem;
 }
@@ -25,46 +32,66 @@ h3 {
   font-size: 1.5rem;
 }
 
-/* Professional Dark Mode */
-
-/* Body background and base text color */
-body {
-  background-color: #1e1e1e;   /* deep charcoal */
-  color: #e4e4e4;              /* soft light grey */
-}
-
-/* Header and navigation bar */
-header, .site-nav {
-  background-color: #2a2a2a;   /* slightly lighter grey for separation */
-}
-
-/* Main content area, code blocks, quotes */
-main, pre, code, blockquote {
-  background-color: #242424;   /* dark, but distinct from body bg */
-}
-
-/* Headings - clean white for contrast */
-h1, h2, h3, h4, h5, h6 {
-  color: #ffffff;
-}
-
-/* Links - calm, soft blue (default) */
-a {
-  color: #4ea1ff;              /* muted electric blue */
-}
-
-/* Make site title and nav links brighter and clearer */
-.site-title, .site-title a {
-  color: #ffffff;
+/* -------------------------------------
+   Site Title & Header
+------------------------------------- */
+.site-title,
+.site-title a,
+.site-header h1,
+.site-header h1 a {
+  color: #ffffff !important;
   font-weight: 600;
 }
 
-.site-nav a {
-  color: #e0e0e0;
-  font-weight: 500;
+/* -------------------------------------
+   Dark Mode Base
+------------------------------------- */
+
+body {
+  background-color: #1e1e1e;
+  color: #e4e4e4;
 }
 
-/* Footer text - dimmer grey */
+header,
+.site-nav {
+  background-color: #2a2a2a;
+}
+
+main,
+pre,
+code,
+blockquote {
+  background-color: #242424;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff;
+}
+
+a {
+  color: #4ea1ff;
+}
+
 footer {
   color: #888888;
 }
+
+/* -------------------------------------
+   Optional: Adjust blockquote & code further if needed
+------------------------------------- */
+
+/* blockquote {
+  border-left: 4px solid #4ea1ff;
+  padding-left: 1rem;
+}
+
+code {
+  background-color: #333333;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+} */
