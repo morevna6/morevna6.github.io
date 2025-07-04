@@ -14,5 +14,6 @@ permalink: /contact/
   <p></p>
   <li><strong>GitHub:</strong> <a href="https://github.com/morevna6" target="_blank">morevna6</a></li>
 </ul>
+<p></p>
 <hr>
 <p><em>I'm open to dialogue, new ideas, and collaborative exploration.</em></p>
