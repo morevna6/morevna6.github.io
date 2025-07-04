@@ -3,8 +3,6 @@ title: "Welcome to The Signal"
 permalink: /
 ---
 
-<h4><strong>Independent Researcher in Cognitive Systems & AI | Computer Programming Student</strong></h4>
-
 <em>“Not everything that is felt is visible. Not everything that is real is measurable.”</em>
 
 <h3><strong>Welcome to The Signal.</strong></h3>
