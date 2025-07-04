@@ -2,9 +2,8 @@
 title: "Welcome to The Signal"
 permalink: /
 ---
-
+<hr>
 <em>“Not everything that is felt is visible. Not everything that is real is measurable.”</em>
-
 <hr>
 
 <p>The personal research platform of F. Günışığı Aydoğan<br>
