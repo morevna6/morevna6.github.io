@@ -3,17 +3,18 @@ title: "Momentum"
 permalink: /momentum/
 ---
 
+<p><strong>Momentum</strong> is a speculative framework exploring memory, perception, and signal resonance.</p>
 
-**Momentum** is a speculative framework exploring memory, perception, and signal resonance.
+<p>It investigates how environmental factors and neural states influence perception echoes.</p>
 
-It investigates how environmental factors and neural states influence perception echoes.  
-The project experiments with:
-- EEG logging
-- Ambient field tracking
-- Non-linear time modeling
+<ul>
+  <li>EEG logging</li>
+  <li>Ambient field tracking</li>
+  <li>Non-linear time modeling</li>
+</ul>
 
-Momentum seeks to simulate, map, and recreate cognitive signal echoes — patterns that linger in consciousness and environment alike.
+<p>Momentum seeks to simulate, map, and recreate cognitive signal echoes — patterns that linger in consciousness and environment alike.</p>
 
----
+<hr>
 
-*This page is still growing as the work progresses.*
+<p><em>This page is still growing as the work progresses.</em></p>
