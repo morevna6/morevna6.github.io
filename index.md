@@ -17,32 +17,49 @@ Computer Programming Student · Independent Systems Researcher</p>
 
 <p>This is a home for what I build; both what can be measured, and what cannot.</p>
 
+<br>
+
 <h2><strong>Projects</strong></h2>
+
+<br>
 
 <h3><strong>Momentum</strong></h3>
 A speculative framework exploring memory, perception, and signal resonance; through EEG logging, ambient field tracking, and non-linear time modeling.
 
+<br>
+
 <h3><strong>Dupsy</strong></h3>
 A lightweight desktop tool for intelligent Excel duplicate detection, with granular export and similarity-based matching. Built for accuracy, speed, and offline use.
+
+<br>
 
 <h3><strong>Solace System</strong></h3>
 A data collection and validation infrastructure designed to support real-world workflows in high-integrity environments. Includes dynamic admin panels, SQL tooling, and fair-based data mapping.
 
+<br>
+
 <h3><strong>Paths of Destiny</strong></h3>
 A multi-layered narrative and game world exploring trauma, resistance, and cosmic inheritance through mythic storytelling and AI-integrated interaction. Where prophecy meets perception.
+
+<br>
 
 <h2><strong>What You'll Find Here</strong></h2>
 
 <ul>
-  <li><strong>Research Logs</strong> — reflections, signal theories, design strategies, and thoughts on perception</li>
-  <li><strong>Project Updates</strong> — technical progress across my tools and systems</li>
-  <li><strong>Experimental Blogs</strong> — ideas in transit: partially formed, provocatively real</li>
-  <li><strong>Narrative Work</strong> — fragments and expansions from Paths of Destiny and beyond</li>
-  <li><strong>Anomalies</strong> — things I can’t define yet, but feel real</li>
+  <li><strong>Research Logs</strong>; reflections, signal theories, design strategies, and thoughts on perception</li>
+  <li><strong>Project Updates</strong>; technical progress across my tools and systems</li>
+  <li><strong>Experimental Blogs</strong>; ideas in transit: partially formed, provocatively real</li>
+  <li><strong>Narrative Work</strong>; fragments and expansions from Paths of Destiny and beyond</li>
+  <li><strong>Anomalies</strong>; things I can’t define yet, but feel real</li>
 </ul>
+
+<br>
 
 <p><em>The work is still growing.</em></p>
 <p><em>This site is still evolving.</em></p>
 <p><em>But the signal is live.</em></p>
 <p><em>And the world is already listening.</em></p>
 <p><em>Welcome.</em></p>
+
+<br>
+
