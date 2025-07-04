@@ -6,6 +6,8 @@ permalink: /
 <em>“Not everything that is felt is visible. Not everything that is real is measurable.”</em>
 <hr>
 
+<br>
+
 <p>The personal research platform of F. Günışığı Aydoğan<br>
 Computer Programming Student · Independent Systems Researcher</p>
 
