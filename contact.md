@@ -3,8 +3,6 @@ title: "Contact"
 permalink: /contact/
 ---
 
-<h2>Contact</h2>
-
 <p>If you'd like to reach out regarding my research, collaborations, or questions about my work, feel free to contact me through the channels below:</p>
 
 <ul>
