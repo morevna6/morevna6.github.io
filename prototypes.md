@@ -3,8 +3,6 @@ title: "Prototypes"
 permalink: /prototypes/
 ---
 
-<h2>Prototypes</h2>
-
 <p>This is where I share experimental tools, conceptual builds, and early frameworks that are still evolving.</p>
 
 <p>These are raw, exploratory projects — unfinished and unconventional, but full of potential.</p>
