@@ -3,8 +3,6 @@ title: "About"
 permalink: /about/
 ---
 
-<h2>About</h2>
-
 <p>I am F. Günışığı Aydoğan, an independent researcher in cognitive systems, signal dynamics, and unconventional computation. I explore the intersections of perception, memory, and technological systems—seeking to build tools that reflect both the measurable and the immeasurable aspects of thought and experience.</p>
 
 <p>My work spans across:</p>
