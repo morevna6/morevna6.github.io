@@ -1,4 +1,4 @@
-/* Navbar spacing and layout */
+
 .site-nav {
   display: flex;
   flex-wrap: nowrap;
@@ -14,7 +14,7 @@
   font-weight: 500;
 }
 
-/* Slightly larger headers */
+
 h1 {
   font-size: 2.5rem;
 }
@@ -27,7 +27,7 @@ h3 {
   font-size: 1.5rem;
 }
 
-/* Title styling */
+
 .site-title,
 .site-title a,
 .site-header h1,
@@ -36,10 +36,10 @@ h3 {
   font-weight: 600;
 }
 
-/* Header background image and overlay */
+
 header {
   position: relative;
-  background-image: url('/assets/images/your-image.jpg');
+  background-image: url('/assets/images/signal.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
