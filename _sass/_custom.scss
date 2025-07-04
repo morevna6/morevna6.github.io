@@ -6,14 +6,15 @@
   gap: 8px;
   justify-content: center;
   font-size: 0.85em;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4) !important;
   padding: 8px 12px;
+  border-radius: 8px;
 }
 
 
 .site-nav a {
   white-space: nowrap;
-  color: #e0e0e0 !important;
+  color: #e0e0e0;
   font-weight: 500;
 }
 
