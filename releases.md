@@ -13,5 +13,7 @@ permalink: /releases/
 </ul>
 
 <p>Release notes, changelogs, and usage instructions will be shared for each release.</p>
+<hr>
+<p></p>
 
 <p><em>More releases coming soon as prototypes mature into usable tools.</em></p>
