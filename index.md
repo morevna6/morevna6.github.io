@@ -45,6 +45,7 @@ A multi-layered narrative and game world exploring trauma, resistance, and cosmi
   <li><strong>Narrative Work</strong>; fragments and expansions from Paths of Destiny and beyond</li>
   <li><strong>Anomalies</strong>; things I can’t define yet, but feel real</li>
 </ul>
+<hr>
 
 <br>
 
