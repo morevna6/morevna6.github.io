@@ -11,10 +11,12 @@
 }
 
 .site-nav a {
+  white-space: nowrap;
   color: #ffffff;
   font-weight: 500;
   padding: 4px 8px;
   text-decoration: none;
+  background-color: transparent;
 }
 
 .nav-item:not(:last-child) {
