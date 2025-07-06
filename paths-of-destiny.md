@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Paths of Destiny"
 permalink: /paths-of-destiny/
 ---
