@@ -3,6 +3,9 @@ author: F. Günışığı Aydoğan
 description: Independent Researcher in Cognitive Systems & AI
 markdown: kramdown
 
+sass:
+  sass_dir: assets/css   # This is needed for your SCSS in assets/css/
+
 header_pages:
   - index.md
   - momentum.md
