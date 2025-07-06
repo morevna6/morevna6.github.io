@@ -1,1 +1,19 @@
+/* Make the navbar wider and titles fit better */
 
+.site-nav {
+  font-size: 1.1rem; /* Slightly larger font */
+  letter-spacing: 0.03em; /* Increase spacing between letters */
+}
+
+.site-header {
+  padding: 20px 40px; /* Increase padding inside the header */
+}
+
+.site-nav .page-link {
+  margin-right: 20px; /* Add space between nav links */
+}
+
+/* Optional: Adjust header max width */
+.wrapper {
+  max-width: 1200px; /* Wider container */
+}
