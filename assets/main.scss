@@ -1,6 +1,5 @@
 ---
 ---
 
-@import "minima";
-
-@import "css/custom";
+@import "minima";   // Minima theme
+@import "custom";   // Your custom overrides (no need to write _sass or .scss)
