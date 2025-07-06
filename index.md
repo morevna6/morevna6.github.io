@@ -29,7 +29,7 @@ A speculative framework exploring memory, perception, and signal resonance; thro
 A lightweight desktop tool for intelligent Excel duplicate detection, with granular export and similarity-based matching. Built for accuracy, speed, and offline use.
 <p></p>
 <h3><strong>Solace System</strong></h3>
-A data collection and validation infrastructure designed to support real-world workflows in high-integrity environments. Includes dynamic admin panels, SQL tooling, and fair-based data mapping.
+A data collection and validation infrastructure designed to support real-world workflows in high-integrity environments. Includes dynamic admin panels, SQL tooling, and data mapping.
 <p></p>
 <h3><strong>Paths of Destiny</strong></h3>
 A multi-layered narrative and game world exploring trauma, resistance, and cosmic inheritance through mythic storytelling and AI-integrated interaction. Where prophecy meets perception.
