@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Signal Echo Theory"
 date: 2025-07-03
 ---
