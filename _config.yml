@@ -2,9 +2,7 @@ title: F. Günışığı Aydoğan | Independent Researcher in Cognitive Systems 
 author: F. Günışığı Aydoğan
 description: Independent Researcher in Cognitive Systems & AI
 markdown: kramdown
-
-sass:
-  sass_dir: _sass
+theme: minima
 
 header_pages:
   - index.md
