@@ -5,3 +5,13 @@ theme: minima
 markdown: kramdown
 kramdown:
   input: GFM
+  
+header_pages:
+  - index.md
+  - momentum.md
+  - prototypes.md
+  - releases.md
+  - paths-of-destiny.md
+  - lablog.md
+  - about.md
+  - contact.md
