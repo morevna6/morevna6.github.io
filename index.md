@@ -1,4 +1,5 @@
 ---
+layout: home
 title: "Welcome to The Signal"
 permalink: /
 ---
