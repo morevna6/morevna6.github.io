@@ -1,4 +1,5 @@
 ---
+layout: page
 title: "Prototypes"
 permalink: /prototypes/
 ---
