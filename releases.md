@@ -9,7 +9,7 @@ permalink: /releases/
 
 <ul>
   <li><strong>Dupsy v1.0.0</strong> — Excel duplicate detection tool with offline fuzzy matching and customizable export.</li>
-  <li><strong>Solace Admin Tools Beta</strong> — Core data validation and fair-mapping system.</li>
+  <li><strong>Solace Admin Tools Beta</strong> — Core data validation and data mapping system.</li>
 </ul>
 
 <p>Release notes, changelogs, and usage instructions will be shared for each release.</p>
