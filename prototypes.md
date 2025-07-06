@@ -14,5 +14,6 @@ permalink: /prototypes/
   <li><strong>Momentum Echo Logger (In Development)</strong> — EEG and environmental signal mapping toolkit for studying perception echoes.</li>
   <li><strong>Solace Admin Tools (Internal Build)</strong> — Data mapping and data validation utilities for cognitive workflow systems.</li>
 </ul>
-
+<hr>
+<p></p>
 <p><em>Note:</em> These prototypes may change, evolve, or disappear as they develop into more stable tools.</p>
