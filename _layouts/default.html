@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <h1><a href="{{ '/' | relative_url }}">My Website</a></h1>
+    <nav>
+      <a href="/">Welcome To The Signal</a>
+      <a href="/momentum/">Momentum</a>
+      <a href="/prototypes/">Prototypes</a>
+      <a href="/releases/">Releases</a>
+      <a href="/paths-of-destiny/">Paths of Destiny</a>
+      <a href="/lablog/">Research Lab</a>
+      <a href="/contact/">Contact</a>
+      <a href="/about/">About</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+  </footer>
+</body>
+</html>
