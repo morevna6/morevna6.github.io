@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Research Lab"
 permalink: /lablog/
 ---
