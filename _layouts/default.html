@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en' }}">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +10,14 @@
   <header>
     <h1><a href="{{ '/' | relative_url }}">My Website</a></h1>
     <nav>
-      <a href="/">Welcome To The Signal</a>
-      <a href="/momentum/">Momentum</a>
-      <a href="/prototypes/">Prototypes</a>
-      <a href="/releases/">Releases</a>
-      <a href="/paths-of-destiny/">Paths of Destiny</a>
-      <a href="/lablog/">Research Lab</a>
-      <a href="/contact/">Contact</a>
-      <a href="/about/">About</a>
+      <a href="{{ '/' | relative_url }}">Welcome To The Signal</a>
+      <a href="{{ '/momentum/' | relative_url }}">Momentum</a>
+      <a href="{{ '/prototypes/' | relative_url }}">Prototypes</a>
+      <a href="{{ '/releases/' | relative_url }}">Releases</a>
+      <a href="{{ '/paths-of-destiny/' | relative_url }}">Paths of Destiny</a>
+      <a href="{{ '/lablog/' | relative_url }}">Research Lab</a>
+      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
     </nav>
   </header>
 
@@ -25,8 +25,6 @@
     {{ content }}
   </main>
 
-  <footer>
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
-  </footer>
+  {% include footer.html %} <!-- This pulls in your _includes/footer.html -->
 </body>
 </html>
