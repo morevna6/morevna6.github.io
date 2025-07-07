@@ -1,0 +1,82 @@
+<footer class="site-footer" style="
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    padding: 2rem 0;
+    font-size: 0.9rem;
+">
+  <div class="wrapper" style="
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+  ">
+    <!-- Footer Column 1: About -->
+    <div class="footer-col">
+      <h3 style="color: var(--accent); margin-bottom: 1rem;">About</h3>
+      <p style="margin: 0.5rem 0;">{{ site.description | default: "Your site description" }}</p>
+    </div>
+
+    <!-- Footer Column 2: Quick Links -->
+    <div class="footer-col">
+      <h3 style="color: var(--accent); margin-bottom: 1rem;">Links</h3>
+      <nav>
+        {% for path in site.footer_pages %}
+          {% assign page = site.pages | where: "path", path | first %}
+          {% if page.title %}
+            <a href="{{ page.url | relative_url }}" style="
+                display: block;
+                color: var(--text);
+                margin: 0.5rem 0;
+                text-decoration: none;
+            ">
+              {{ page.title }}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </nav>
+    </div>
+
+    <!-- Footer Column 3: Contact -->
+    <div class="footer-col">
+      <h3 style="color: var(--accent); margin-bottom: 1rem;">Contact</h3>
+      <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+        {% if site.email %}
+          <a href="mailto:{{ site.email }}" style="color: var(--accent);">Email</a>
+        {% endif %}
+        {% if site.social_links %}
+          <div class="social-links" style="display: flex; gap: 1rem;">
+            {% include social.html %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="copyright" style="
+      text-align: center;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+  ">
+    &copy; {{ 'now' | date: "%Y" }} {{ site.title }}
+  </div>
+</footer>
+
+<style>
+  /* Mobile Footer */
+  @media (max-width: 768px) {
+    .wrapper {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .footer-col {
+      text-align: center;
+    }
+    .social-links {
+      justify-content: center;
+    }
+  }
+</style>
