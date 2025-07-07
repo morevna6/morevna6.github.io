@@ -1,0 +1,24 @@
+<header class="site-header">
+  <nav class="site-nav">
+    <!-- Dark theme compatible menu -->
+    <div class="trigger">
+      {% for page in site.header_pages %}
+        <a class="page-link" href="{{ page.url | relative_url }}" 
+           style="color: {% if page.url == page.url %}var(--accent){% else %}var(--text){% endif %}">
+          {{ page.title | escape }}
+        </a>
+      {% endfor %}
+    </div>
+  </nav>
+</header>
+
+<style>
+  .site-header {
+    background: var(--bg) !important;
+    border-bottom: 1px solid #333;
+  }
+  .page-link { 
+    color: var(--text);
+    &:hover { color: var(--accent); }
+  }
+</style>
