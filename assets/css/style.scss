@@ -34,3 +34,13 @@
   background: var(--card-bg);
   border-color: var(--border);
 }
+
+/* Mobile menu background */
+.site-nav {
+  background-color: var(--bg);
+  border-left: 1px solid var(--border);
+  
+  .trigger {
+    background-color: var(--bg);
+  }
+}
