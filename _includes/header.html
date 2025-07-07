@@ -1,44 +1,126 @@
-<header class="site-header" style="border-bottom: 1px solid var(--border);">
-  <!-- Image Header Section -->
+<header class="site-header" style="background: var(--bg);">
+  <!-- Background Image Section -->
   <div class="title-container" style="
       background: 
         linear-gradient(rgba(26,26,26,0.5), rgba(26,26,26,0.5)),
         url('{{ '/assets/images/background.jpg' | relative_url }}');
       background-size: cover;
       background-position: center;
-      background-attachment: local;
-      height: 60vh; /* Adjust this value */
-      max-height: 500px;
-      min-height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 6rem 1rem;
+      text-align: center;
       position: relative;
   ">
+    <!-- Dark overlay -->
+    <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.4);
+    "></div>
+    
     <!-- Site Title -->
-    <div style="position: relative; z-index: 2; text-align: center;">
+    <div style="position: relative; z-index: 1;">
       <a class="site-title" href="{{ "/" | relative_url }}" 
          style="color: var(--accent); 
                 font-weight: 600; 
-                font-size: clamp(1.8rem, 4vw, 3rem);
-                text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
-                padding: 1rem 2rem;
-                background: rgba(0,0,0,0.4);
-                border-radius: 8px;">
+                font-size: 2.5rem;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+                display: inline-block;
+                padding: 0.75rem 2rem;
+                background: rgba(0,0,0,0.5);
+                border-radius: 4px;">
         {{ site.title | escape }}
       </a>
     </div>
   </div>
 
-  <!-- Navigation Bar (Keep your existing perfect navigation code) -->
+  <!-- Navigation Bar - Fully Preserved -->
+  <div class="nav-wrapper" style="
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+  ">
+    <div class="wrapper" style="
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    ">
+      {%- assign page_paths = site.header_pages | default: nil -%}
+      {%- if page_paths -%}
+        <nav class="site-nav" style="text-align: center;">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+          <label for="nav-trigger">
+            <span class="menu-icon" style="color: var(--text);">
+              <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path fill="currentColor" d="M18,1.5..."/>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger" style="
+              display: inline-flex;
+              gap: 2rem;
+              padding: 0.5rem 0;
+          ">
+            {%- for path in page_paths -%}
+              {%- assign page = site.pages | where: "path", path | first -%}
+              {%- if page.title -%}
+                <a class="page-link" 
+                   href="{{ page.url | relative_url }}"
+                   style="
+                      color: var(--text);
+                      white-space: nowrap;
+                      padding: 0.5rem 0;
+                      border-bottom: 2px solid transparent;
+                      {% if page.url == page.url %}border-color: var(--accent);{% endif %}
+                   ">
+                  {{ page.title | escape }}
+                </a>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        </nav>
+      {%- endif -%}
+    </div>
+  </div>
 </header>
 
 <style>
-  /* Responsive image sizing */
-  @media (max-width: 768px) {
+  /* Desktop Navigation */
+  @media screen and (min-width: 768px) {
+    .site-nav {
+      position: relative;
+    }
+    .trigger {
+      background: transparent !important;
+    }
+    .page-link:hover {
+      opacity: 0.8;
+      border-color: var(--accent) !important;
+    }
+  }
+  
+  /* Mobile Navigation */
+  @media screen and (max-width: 767px) {
     .title-container {
-      height: 40vh;
-      min-height: 250px;
+      padding: 4rem 1rem;
+    }
+    .trigger {
+      flex-direction: column;
+      gap: 0.75rem;
+      padding: 1rem;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      margin-top: 0.5rem;
+    }
+    .menu-icon {
+      display: block;
+      margin: 0 auto;
     }
   }
 </style>
