@@ -1,20 +1,25 @@
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <!-- Dark theme enforcement -->
+  <!-- Dark Theme Core -->
   <style>
-    body {
-      background: #1a1a1a;
-      color: #e8e8e8;
+    :root {
+      --bg: #1a1a1a;         /* Base dark */
+      --text: #e8e8e8;       /* Soft white */
+      --accent: #6bb8ff;     /* Gentle blue */
+      --border: #333;        /* Dark borders */
+      --card-bg: #252525;    /* Slightly lighter elements */
     }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); }
   </style>
-  
-  <!-- Preserve Minima's auto-generated tags -->
+
   {% seo %}
   {% feed_meta %}
-  
-  <!-- Your CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
