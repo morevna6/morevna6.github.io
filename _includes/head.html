@@ -10,6 +10,7 @@
       --accent: #6bb8ff;     /* Blue links */
       --card-bg: #252525;    /* Slightly lighter elements */
       --border: #333;        /* Border color */
+      --nav-bg: #323232;     /* Added navigation background */
     }
     
     /* Force dark on ALL elements */
@@ -21,6 +22,28 @@
     .home {
       background: var(--bg) !important;
       color: var(--text) !important;
+    }
+
+    /* Mobile Navigation Overrides Only */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        padding: 0.5rem;
+        background: var(--nav-bg) !important;
+      }
+      .nav-links a {
+        font-size: 0.9rem;
+        padding: 0.5rem !important;
+        text-align: center;
+        background: rgba(255,255,255,0.05);
+        border-radius: 4px;
+        margin: 0 !important;
+      }
+      .menu-icon {
+        margin-bottom: 0.5rem;
+      }
     }
   </style>
 
