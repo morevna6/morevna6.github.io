@@ -1,16 +1,14 @@
 <header class="site-header" style="background: var(--bg); border-bottom: 1px solid var(--border);">
-  <div class="wrapper">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-    
+  <div class="wrapper" style="display: flex; justify-content: space-between; align-items: center;">
     <!-- Site Title/Logo -->
-    <a class="site-title" href="{{ "/" | relative_url }}" style="color: var(--accent); font-weight: 600;">
+    <a class="site-title" href="{{ "/" | relative_url }}" 
+       style="color: var(--accent); font-weight: 600; white-space: nowrap;">
       {{ site.title | escape }}
     </a>
 
+    {%- assign page_paths = site.header_pages | default: nil -%}
     {%- if page_paths -%}
       <nav class="site-nav">
-        <!-- Mobile Menu Button -->
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon" style="color: var(--text);">
@@ -20,17 +18,17 @@
           </span>
         </label>
 
-        <!-- Navigation Links -->
-        <div class="trigger">
+        <div class="trigger" style="display: flex; gap: 1.5rem;">
           {%- for path in page_paths -%}
             {%- assign page = site.pages | where: "path", path | first -%}
             {%- if page.title -%}
-              <a class="page-link" href="{{ page.url | relative_url }}" 
-                 style="color: var(--text); 
-                        margin: 0 0.5rem;
-                        padding: 0.25rem 0;
-                        border-bottom: 2px solid transparent;
-                        {% if page.url == page.url %}border-color: var(--accent);{% endif %}">
+              <a class="page-link" 
+                 href="{{ page.url | relative_url }}"
+                 style="color: var(--text);
+                        white-space: nowrap;
+                        padding: 0.5rem 0;
+                        position: relative;
+                        {% if page.url == page.url %}border-bottom: 2px solid var(--accent);{% endif %}">
                 {{ page.title | escape }}
               </a>
             {%- endif -%}
@@ -43,27 +41,29 @@
 
 <style>
   /* Desktop Navigation */
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 768px) {
     .site-nav {
       position: static;
     }
     .trigger {
-      display: flex;
-      gap: 1rem;
       padding: 0;
-      background: transparent;
-    }
-    .page-link {
-      transition: border-color 0.2s ease;
+      background: transparent !important;
     }
     .page-link:hover {
-      border-color: var(--accent) !important;
+      opacity: 0.9;
     }
   }
   
   /* Mobile Navigation */
-  .nav-trigger:checked ~ .trigger {
-    background: var(--card-bg);
-    border: 1px solid var(--border);
+  @media screen and (max-width: 767px) {
+    .trigger {
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 1rem;
+    }
+    .nav-trigger:checked ~ .trigger {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+    }
   }
 </style>
