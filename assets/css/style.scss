@@ -3,63 +3,30 @@
 @import "minima";
 
 /* ===== FORCED DARK THEME ===== */
-/* Completely overrides all light mode defaults */
+$background-color: #1a1a1a;  // Dark gray (not pure black)
+$text-color:       #f0f0f0;  // Soft white
+$brand-color:      #6bb8ff;  // Gentle blue
 
-// Core Colors
-$background-color: #1e1e1e !default;  // Soft dark (RGB 30,30,30)
-$text-color: #f0f0f0 !default;        // Off-white (RGB 240,240,240)
-$brand-color: #5eb0ff !default;       // Comfortable blue
-$border-color: #383838 !default;      // Subtle borders
-
-// Absolute overrides
+// Nuclear override (ignores all light modes)
 body {
-  background-color: $background-color !important;
+  background: $background-color !important;
   color: $text-color !important;
   -webkit-font-smoothing: antialiased;
 }
 
+// Links
 a {
   color: $brand-color !important;
   &:hover {
-    color: lighten($brand-color, 12%) !important;
+    color: lighten($brand-color, 15%) !important;
   }
 }
 
-// Text elements
-h1, h2, h3, h4, h5, h6,
-p, li, blockquote {
-  color: $text-color !important;
+// Headers
+h1, h2, h3, h4, h5, h6 {
+  color: lighten($text-color, 5%) !important;
 }
 
 // Code blocks
-pre, code {
-  background-color: #252525 !important;
-  border-color: $border-color !important;
-  color: #dcdcdc !important;
-}
-
-// Header/Footer
-.site-header, .site-footer {
-  background-color: #181818 !important;
-  border-color: $border-color !important;
-}
-
-// Tables
-table {
-  color: $text-color !important;
-  th {
-    background-color: #252525;
-  }
-  tr:nth-child(even) {
-    background-color: #282828;
-  }
-}
-
-/* ===== EXPLICIT LIGHT ELEMENT OVERRIDES ===== */
-/* Force dark versions of Minima's light elements */
 .highlight {
-  background-color: #252525 !important;
-  .c, .cm, .cp, .c1 { color: #57a64a !important; } /* Comments */
-  .k, .kv { color: #569cd6 !important; }           /* Keywords */
-  .s, .sb { color: #d69d85 !important; }          /* Strings */
-}
+  background: #252525 !imp
