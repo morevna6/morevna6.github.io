@@ -5,37 +5,22 @@
   <!-- Core Dark Theme Styles -->
   <style>
     :root {
-      /* Existing colors (keep these) */
-      --bg: #1a1a1a;
-      --text: #e8e8e8;
-      --accent: #6bb8ff;
-      --card-bg: #252525;
-      --border: #333;
-
-      /* New navigation variables */
-      --nav-bg: #323232; /* Your chosen color */
-      --nav-text: var(--text);
-      --nav-hover: var(--accent);
-      --nav-spacing: 0.5rem;
-      --mobile-breakpoint: 768px;
+      --bg: #1a1a1a;         /* Base dark */
+      --text: #e8e8e8;       /* Light text */
+      --accent: #6bb8ff;     /* Blue links */
+      --card-bg: #252525;    /* Slightly lighter elements */
+      --border: #333;        /* Border color */
     }
-
-    /* Mobile navigation (site-wide) */
-    @media (max-width: var(--mobile-breakpoint)) {
-      .nav-links {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr);
-        gap: var(--nav-spacing);
-        padding: 0.5rem;
-      }
-      .nav-links a {
-        font-size: 0.9rem;
-        padding: 0.5rem;
-        text-align: center;
-        background: rgba(255,255,255,0.05);
-        border-radius: 4px;
-      }
-      .menu-toggle { display: block; }
+    
+    /* Force dark on ALL elements */
+    body, 
+    .page-content,
+    .wrapper,
+    .post, 
+    .post-list,
+    .home {
+      background: var(--bg) !important;
+      color: var(--text) !important;
     }
   </style>
 
