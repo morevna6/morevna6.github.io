@@ -2,37 +2,13 @@
 ---
 @import "minima";
 
-/* ===== FORCED DARK THEME ===== */
-$background-color: #1a1a1a;
-$text-color: #f0f0f0;
-$brand-color: #6bb8ff;
-$border-color: #333;
-
-body {
-  background: $background-color;
-  color: $text-color;
-  -webkit-font-smoothing: antialiased;
-}
-
-a {
-  color: $brand-color;
-  &:hover {
-    color: lighten($brand-color, 15%);
-  }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: lighten($text-color, 5%);
-}
-
+/* Non-critical dark theme enhancements */
 .highlight {
   background: #252525;
-  pre, code {
-    color: #e0e0e0;
-  }
+  border: 1px solid #333;
 }
 
 .site-header, .site-footer {
-  background: darken($background-color, 3%);
-  border-color: $border-color;
+  background: #181818;
+  border-color: #333;
 }
