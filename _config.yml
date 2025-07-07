@@ -15,3 +15,13 @@ header_pages:
   - lablog.md
   - about.md
   - contact.md
+
+footer_pages:
+  - about.md
+  - contact.md
+  # Add other pages you want in footer links
+
+social_links:
+  twitter: yourtwitter
+  github: yourgithub
+  # Add other social media
