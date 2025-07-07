@@ -1,0 +1,47 @@
+<header class="site-header" style="background: var(--bg); border-bottom: 1px solid var(--border);">
+  <div class="wrapper">
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.minima.nav_pages | default: default_paths -%}
+    {%- assign page_titles = site.pages | map: 'title' | compact %}
+    
+    <!-- Site Title -->
+    <a class="site-title" rel="author" href="{{ '/' | relative_url }}" 
+       style="color: var(--text);">
+      {{ site.title | escape }}
+    </a>
+
+    {%- unless page_titles == empty %}
+      <nav class="site-nav">
+        <!-- Mobile Menu Toggle -->
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="var(--text)" d="M18,1.5..."/>
+            </svg>
+          </span>
+        </label>
+
+        <!-- Navigation Items -->
+        <div class="trigger">
+          {% include nav-items.html paths=page_paths %}
+        </div>
+      </nav>
+    {%- endunless %}
+  </div>
+</header>
+
+<style>
+  /* Mobile menu icon */
+  .menu-icon svg path { 
+    fill: var(--text);
+  }
+  
+  /* Navigation links */
+  .page-link {
+    color: var(--text);
+    &:hover {
+      color: var(--accent);
+    }
+  }
+</style>
