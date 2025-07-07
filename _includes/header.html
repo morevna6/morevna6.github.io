@@ -1,47 +1,69 @@
 <header class="site-header" style="background: var(--bg); border-bottom: 1px solid var(--border);">
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.minima.nav_pages | default: default_paths -%}
-    {%- assign page_titles = site.pages | map: 'title' | compact %}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
     
-    <!-- Site Title -->
-    <a class="site-title" rel="author" href="{{ '/' | relative_url }}" 
-       style="color: var(--text);">
+    <!-- Site Title/Logo -->
+    <a class="site-title" href="{{ "/" | relative_url }}" style="color: var(--accent); font-weight: 600;">
       {{ site.title | escape }}
     </a>
 
-    {%- unless page_titles == empty %}
+    {%- if page_paths -%}
       <nav class="site-nav">
-        <!-- Mobile Menu Toggle -->
+        <!-- Mobile Menu Button -->
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
-          <span class="menu-icon">
+          <span class="menu-icon" style="color: var(--text);">
             <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path fill="var(--text)" d="M18,1.5..."/>
+              <path fill="currentColor" d="M18,1.5..."/>
             </svg>
           </span>
         </label>
 
-        <!-- Navigation Items -->
+        <!-- Navigation Links -->
         <div class="trigger">
-          {% include nav-items.html paths=page_paths %}
+          {%- for path in page_paths -%}
+            {%- assign page = site.pages | where: "path", path | first -%}
+            {%- if page.title -%}
+              <a class="page-link" href="{{ page.url | relative_url }}" 
+                 style="color: var(--text); 
+                        margin: 0 0.5rem;
+                        padding: 0.25rem 0;
+                        border-bottom: 2px solid transparent;
+                        {% if page.url == page.url %}border-color: var(--accent);{% endif %}">
+                {{ page.title | escape }}
+              </a>
+            {%- endif -%}
+          {%- endfor -%}
         </div>
       </nav>
-    {%- endunless %}
+    {%- endif -%}
   </div>
 </header>
 
 <style>
-  /* Mobile menu icon */
-  .menu-icon svg path { 
-    fill: var(--text);
+  /* Desktop Navigation */
+  @media screen and (min-width: 600px) {
+    .site-nav {
+      position: static;
+    }
+    .trigger {
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+      background: transparent;
+    }
+    .page-link {
+      transition: border-color 0.2s ease;
+    }
+    .page-link:hover {
+      border-color: var(--accent) !important;
+    }
   }
   
-  /* Navigation links */
-  .page-link {
-    color: var(--text);
-    &:hover {
-      color: var(--accent);
-    }
+  /* Mobile Navigation */
+  .nav-trigger:checked ~ .trigger {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
   }
 </style>
