@@ -3,30 +3,36 @@
 @import "minima";
 
 /* ===== FORCED DARK THEME ===== */
-$background-color: #1a1a1a;  // Dark gray (not pure black)
-$text-color:       #f0f0f0;  // Soft white
-$brand-color:      #6bb8ff;  // Gentle blue
+$background-color: #1a1a1a;
+$text-color: #f0f0f0;
+$brand-color: #6bb8ff;
+$border-color: #333;
 
-// Nuclear override (ignores all light modes)
 body {
-  background: $background-color !important;
-  color: $text-color !important;
+  background: $background-color;
+  color: $text-color;
   -webkit-font-smoothing: antialiased;
 }
 
-// Links
 a {
-  color: $brand-color !important;
+  color: $brand-color;
   &:hover {
-    color: lighten($brand-color, 15%) !important;
+    color: lighten($brand-color, 15%);
   }
 }
 
-// Headers
 h1, h2, h3, h4, h5, h6 {
-  color: lighten($text-color, 5%) !important;
+  color: lighten($text-color, 5%);
 }
 
-// Code blocks
 .highlight {
-  background: #252525 !imp
+  background: #252525;
+  pre, code {
+    color: #e0e0e0;
+  }
+}
+
+.site-header, .site-footer {
+  background: darken($background-color, 3%);
+  border-color: $border-color;
+}
