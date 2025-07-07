@@ -2,21 +2,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <!-- Dark Theme Core -->
+  <!-- Core Dark Theme Styles -->
   <style>
     :root {
       --bg: #1a1a1a;         /* Base dark */
-      --text: #e8e8e8;       /* Soft white */
-      --accent: #6bb8ff;     /* Gentle blue */
-      --border: #333;        /* Dark borders */
+      --text: #e8e8e8;       /* Light text */
+      --accent: #6bb8ff;     /* Blue links */
       --card-bg: #252525;    /* Slightly lighter elements */
+      --border: #333;        /* Border color */
     }
-    body {
-      background: var(--bg);
-      color: var(--text);
-      -webkit-font-smoothing: antialiased;
+    
+    /* Force dark on ALL elements */
+    body, 
+    .page-content,
+    .wrapper,
+    .post, 
+    .post-list,
+    .home {
+      background: var(--bg) !important;
+      color: var(--text) !important;
     }
-    a { color: var(--accent); }
   </style>
 
   {% seo %}
