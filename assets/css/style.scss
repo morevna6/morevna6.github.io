@@ -2,13 +2,35 @@
 ---
 @import "minima";
 
-/* Non-critical dark theme enhancements */
-.highlight {
-  background: #252525;
-  border: 1px solid #333;
+/* ===== Component-Specific Dark Styles ===== */
+.site-header {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  
+  .site-title { color: var(--text); }
+  
+  .page-link {
+    color: var(--text);
+    &:hover { color: var(--accent); }
+  }
+  
+  /* Mobile menu icon */
+  .menu-icon svg path { fill: var(--text); }
 }
 
-.site-header, .site-footer {
-  background: #181818;
-  border-color: #333;
+.site-footer {
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+}
+
+/* Posts and cards */
+.post, .post-list > li {
+  border-color: var(--border);
+  background: var(--card-bg);
+}
+
+/* Code blocks */
+.highlight {
+  background: var(--card-bg);
+  border-color: var(--border);
 }
