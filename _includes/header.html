@@ -1,16 +1,16 @@
 <header class="site-header" style="background: var(--bg); border-bottom: 1px solid var(--border); padding: 1rem 0;">
-  <div class="wrapper" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
-    <!-- Site Title - Now at 1.5rem (was 1.8rem) -->
-    <div style="text-align: center; margin-bottom: 0.8rem;">
+  <div class="wrapper" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; display: flex; flex-direction: column; align-items: center;">
+    <!-- Perfectly Centered Site Title -->
+    <div style="width: 100%; text-align: center; margin-bottom: 0.8rem;">
       <a class="site-title" href="{{ "/" | relative_url }}" 
-         style="color: var(--accent); font-weight: 600; font-size: 1.5rem;">
+         style="color: var(--accent); font-weight: 600; font-size: 1.5rem; display: inline-block;">
         {{ site.title | escape }}
       </a>
     </div>
 
     {%- assign page_paths = site.header_pages | default: nil -%}
     {%- if page_paths -%}
-      <nav class="site-nav" style="text-align: center;">
+      <nav class="site-nav" style="width: 100%; text-align: center;">
         <!-- Mobile Menu Toggle -->
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
@@ -42,39 +42,3 @@
     {%- endif -%}
   </div>
 </header>
-
-<style>
-  /* Desktop Navigation */
-  @media screen and (min-width: 768px) {
-    .site-nav {
-      position: relative;
-    }
-    .trigger {
-      background: transparent !important;
-    }
-    .page-link:hover {
-      opacity: 0.8;
-      border-color: var(--accent) !important;
-    }
-  }
-  
-  /* Mobile Navigation */
-  @media screen and (max-width: 767px) {
-    .wrapper {
-      padding: 0 1rem;
-    }
-    .trigger {
-      flex-direction: column;
-      gap: 0.75rem;
-      padding: 1rem;
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      margin-top: 0.5rem;
-    }
-    .menu-icon {
-      display: block;
-      margin: 0 auto;
-    }
-  }
-</style>
