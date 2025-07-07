@@ -2,45 +2,31 @@
 ---
 @import "minima";
 
-/* ===== Component-Specific Dark Styles ===== */
-.site-header {
+/* Main content area */
+.main-content {
   background: var(--bg);
-  border-bottom: 1px solid var(--border);
-  
-  .site-title { color: var(--text); }
-  
-  .page-link {
-    color: var(--text);
-    &:hover { color: var(--accent); }
-  }
-  
-  /* Mobile menu icon */
-  .menu-icon svg path { fill: var(--text); }
+  padding: 2rem 0;
 }
 
-.site-footer {
-  background: var(--bg);
-  border-top: 1px solid var(--border);
-}
-
-/* Posts and cards */
-.post, .post-list > li {
-  border-color: var(--border);
+/* Posts and pages */
+.post, 
+.page {
   background: var(--card-bg);
+  border: 1px solid var(--border);
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+/* Homepage listings */
+.post-list > li {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 /* Code blocks */
 .highlight {
   background: var(--card-bg);
-  border-color: var(--border);
-}
-
-/* Mobile menu background */
-.site-nav {
-  background-color: var(--bg);
-  border-left: 1px solid var(--border);
-  
-  .trigger {
-    background-color: var(--bg);
-  }
+  border: 1px solid var(--border);
 }
