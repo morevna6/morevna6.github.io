@@ -1,14 +1,17 @@
-<header class="site-header" style="background: var(--bg); border-bottom: 1px solid var(--border);">
-  <div class="wrapper" style="display: flex; justify-content: space-between; align-items: center;">
-    <!-- Site Title/Logo -->
-    <a class="site-title" href="{{ "/" | relative_url }}" 
-       style="color: var(--accent); font-weight: 600; white-space: nowrap;">
-      {{ site.title | escape }}
-    </a>
+<header class="site-header" style="background: var(--bg); border-bottom: 1px solid var(--border); padding: 1rem 0;">
+  <div class="wrapper" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+    <!-- Site Title - Centered above nav -->
+    <div style="text-align: center; margin-bottom: 1rem;">
+      <a class="site-title" href="{{ "/" | relative_url }}" 
+         style="color: var(--accent); font-weight: 600; font-size: 1.8rem;">
+        {{ site.title | escape }}
+      </a>
+    </div>
 
     {%- assign page_paths = site.header_pages | default: nil -%}
     {%- if page_paths -%}
-      <nav class="site-nav">
+      <nav class="site-nav" style="text-align: center;">
+        <!-- Mobile Menu Toggle -->
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon" style="color: var(--text);">
@@ -18,7 +21,8 @@
           </span>
         </label>
 
-        <div class="trigger" style="display: flex; gap: 1.5rem;">
+        <!-- Navigation Links -->
+        <div class="trigger" style="display: inline-flex; gap: 2rem; padding: 0.5rem 0;">
           {%- for path in page_paths -%}
             {%- assign page = site.pages | where: "path", path | first -%}
             {%- if page.title -%}
@@ -27,8 +31,8 @@
                  style="color: var(--text);
                         white-space: nowrap;
                         padding: 0.5rem 0;
-                        position: relative;
-                        {% if page.url == page.url %}border-bottom: 2px solid var(--accent);{% endif %}">
+                        border-bottom: 2px solid transparent;
+                        {% if page.url == page.url %}border-color: var(--accent);{% endif %}">
                 {{ page.title | escape }}
               </a>
             {%- endif -%}
@@ -43,27 +47,34 @@
   /* Desktop Navigation */
   @media screen and (min-width: 768px) {
     .site-nav {
-      position: static;
+      position: relative;
     }
     .trigger {
-      padding: 0;
       background: transparent !important;
     }
     .page-link:hover {
-      opacity: 0.9;
+      opacity: 0.8;
+      border-color: var(--accent) !important;
     }
   }
   
   /* Mobile Navigation */
   @media screen and (max-width: 767px) {
+    .wrapper {
+      padding: 0 1rem;
+    }
     .trigger {
       flex-direction: column;
-      gap: 0.5rem;
+      gap: 0.75rem;
       padding: 1rem;
-    }
-    .nav-trigger:checked ~ .trigger {
       background: var(--card-bg);
       border: 1px solid var(--border);
+      border-radius: 4px;
+      margin-top: 0.5rem;
+    }
+    .menu-icon {
+      display: block;
+      margin: 0 auto;
     }
   }
 </style>
