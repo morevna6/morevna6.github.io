@@ -3,6 +3,7 @@ title: "Releases"
 permalink: /releases/
 ---
 
+<hr>
 <h3>Dupsy</h3>
 <p>A lightweight offline duplicate finder for Excel files.</p>
 <ul>
