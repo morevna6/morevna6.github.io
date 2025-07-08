@@ -6,7 +6,7 @@ permalink: /contact/
 <p>If you'd like to reach out regarding my research, collaborations, or questions about my work, feel free to contact me through the channels below:</p>
 
 <ul>
-  <li><strong>Email:</strong> email@email.com</li>
+  <li><strong>Email:</strong> fatmagunisigiaydogan@gmail.com</li>
   <p></p>
   <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gunisigiaydogan/" target="_blank">F. Günışığı Aydoğan</a></li>
   <p></p>
