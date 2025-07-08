@@ -4,7 +4,7 @@ permalink: /releases/
 ---
 
 <hr>
-<p></p>
+<br>
 <h3>Dupsy</h3>
 <hr>
 <p>A lightweight offline duplicate finder for Excel files.</p>
