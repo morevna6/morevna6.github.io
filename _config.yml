@@ -6,6 +6,10 @@ markdown: kramdown
 kramdown:
   input: GFM
 
+# Remove these if present:
+# plugins:
+#   - jekyll-feed
+
 header_pages:
   - index.md
   - momentum.md
@@ -19,9 +23,7 @@ header_pages:
 footer_pages:
   - about.md
   - contact.md
-  # Add other pages you want in footer links
 
 social_links:
-  linkedin: gunisigiaydogan  # Just the username part
-  github: morevna6           # Your GitHub username
-  # Add others as needed
+  linkedin: gunisigiaydogan
+  github: morevna6
