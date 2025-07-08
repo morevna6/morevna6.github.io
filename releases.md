@@ -4,7 +4,9 @@ permalink: /releases/
 ---
 
 <hr>
+<p></p>
 <h3>Dupsy</h3>
+<hr>
 <p>A lightweight offline duplicate finder for Excel files.</p>
 <ul>
   <li><strong>Repository:</strong> <a href="https://github.com/morevna6/dupsy">github.com/morevna6/dupsy</a></li>
