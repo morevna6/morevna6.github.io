@@ -3,8 +3,6 @@ title: "Started Working on My First Language Model"
 date: 2025-07-08
 ---
 
-<h2>Started Working on My First Language Model</h2>
-<hr>
 
 <p>Today marks the beginning of a journey I’ve been dreaming about for a long time; I’ve officially started working on my first <strong>language model from scratch</strong>.</p>
 
