@@ -34,6 +34,10 @@ A data collection and validation infrastructure designed to support real-world w
 <p></p>
 <h3><strong>Paths of Destiny</strong></h3>
 A multi-layered narrative and game world exploring trauma, resistance, and cosmic inheritance through mythic storytelling and AI-integrated interaction. Where prophecy meets perception.
+<p></p>
+<h3><strong>Starwoven</strong></h3>
+An interactive novel built with Python, designed to help players process loss, identity, and quiet survival through branching storylines and emotional logic. Light-based beings, memory echoes, and gendered truths shape the world you walk in.
+
 
 <br>
 
