@@ -4,8 +4,6 @@ title: "Roots, Then Wings"
 date: 2025-07-30
 ---
 
-<h2>Roots, Then Wings</h2>
-
 <p>I’m standing at a strange threshold; where one chapter closes, and another demands to be written.</p>
 
 <p>Right now, I’m preparing for my final exams: <strong>Unix System Management</strong> and <strong>Data Types</strong>. These are the final pages of my Associate’s Degree in Computer Programming. A piece of paper to some, survival and rebellion to me. I didn’t get here easily. I carved my way through mental storms, financial collapse, systemic neglect, and the shadows of my own past. I carried a thousand weights just to sit in these classrooms, just to earn the right to build a future.</p>
