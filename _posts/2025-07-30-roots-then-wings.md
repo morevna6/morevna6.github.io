@@ -34,5 +34,3 @@ date: 2025-07-30
 <p>This post isn’t a celebration. It’s a marker. A declaration. A quiet timestamp in the storm to say: I’m still here. I’m still building. I’m not done yet.</p>
 
 <p>I have roots in pain, but I’m growing wings in knowledge. One doesn’t cancel the other; they coexist. And from that tension, I create.</p>
-
-<p>— Morevna</p>
