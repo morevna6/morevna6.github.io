@@ -10,7 +10,7 @@ permalink: /
 <br>
 
 <p>The personal research platform of F. Günışığı Aydoğan<br>
-Computer Programming Student · Independent Systems Researcher</p>
+Computer Programming Graduate · Independent Systems Researcher</p>
 
 <p>I build systems; functional, cognitive, speculative.</p>
 
