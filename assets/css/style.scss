@@ -495,3 +495,48 @@
     width: 100%;
   }
 }
+
+/* ==============================
+   Analytical notes
+   ============================== */
+
+.analysis-note {
+  max-width: 850px;
+  margin: 1.5rem 0;
+  padding: 1rem 1.2rem;
+
+  background: rgba(107, 184, 255, 0.08);
+  border: 1px solid rgba(107, 184, 255, 0.3);
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+
+  line-height: 1.65;
+}
+
+.project-section blockquote {
+  max-width: 850px;
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+
+  color: var(--text);
+  background: var(--card-bg);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 6px 6px 0;
+
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.project-section pre {
+  max-width: 850px;
+  overflow-x: auto;
+  padding: 1.25rem;
+
+  background: #161616;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.project-section code {
+  font-size: 0.9em;
+}
