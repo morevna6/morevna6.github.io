@@ -1,53 +1,119 @@
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Core Dark Theme Styles -->
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  {% seo %}
+  {% feed_meta %}
+
+  <!-- Main stylesheet -->
+  <link
+    rel="stylesheet"
+    href="{{ '/assets/css/style.css' | relative_url }}"
+  >
+
+  <!-- Theme variables and essential global styling -->
   <style>
     :root {
-      --bg: #1a1a1a;         /* Base dark */
-      --text: #e8e8e8;       /* Light text */
-      --accent: #6bb8ff;     /* Blue links */
-      --card-bg: #252525;    /* Slightly lighter elements */
-      --border: #333;        /* Border color */
-      --nav-bg: #323232;     /* Added navigation background */
+      --bg: #1a1a1a;
+      --text: #e8e8e8;
+      --accent: #6bb8ff;
+      --card-bg: #252525;
+      --border: #333333;
+      --nav-bg: #323232;
     }
-    
-    /* Force dark on ALL elements */
-    body, 
+
+    /*
+     * Global dark theme
+     */
+
+    html {
+      background: var(--bg);
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    body,
     .page-content,
     .wrapper,
-    .post, 
+    .post,
     .post-list,
     .home {
       background: var(--bg) !important;
       color: var(--text) !important;
     }
 
-    /* Mobile Navigation Overrides Only */
-    @media (max-width: 768px) {
-      .nav-links {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem;
-        padding: 0.5rem;
-        background: var(--nav-bg) !important;
-      }
-      .nav-links a {
-        font-size: 0.9rem;
-        padding: 0.5rem !important;
-        text-align: center;
-        background: rgba(255,255,255,0.05);
-        border-radius: 4px;
-        margin: 0 !important;
-      }
-      .menu-icon {
-        margin-bottom: 0.5rem;
+    /*
+     * General links
+     */
+
+    a {
+      color: var(--accent);
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--accent);
+    }
+
+    /*
+     * Accessible keyboard focus
+     */
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    /*
+     * Prevent buttons from inheriting browser-specific
+     * font behaviour.
+     */
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    /*
+     * Improve box sizing consistency.
+     */
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    /*
+     * Respect reduced-motion preferences.
+     */
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
       }
     }
   </style>
 
-  {% seo %}
-  {% feed_meta %}
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <!-- Responsive navigation behaviour -->
+  <script
+    src="{{ '/assets/js/navigation.js' | relative_url }}"
+    defer
+  ></script>
 </head>
