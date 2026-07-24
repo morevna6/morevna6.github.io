@@ -1,8 +1,14 @@
 <header class="site-header">
-  <!-- Background Image Section -->
-  <div class="hero-section" style="
-      background: 
-        linear-gradient(rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.4)),
+
+  <!-- Hero Section -->
+  <div
+    class="hero-section"
+    style="
+      background:
+        linear-gradient(
+          rgba(26, 26, 26, 0.6),
+          rgba(26, 26, 26, 0.4)
+        ),
         url('{{ '/assets/images/background.jpg' | relative_url }}');
       background-size: cover;
       background-position: center;
@@ -11,83 +17,161 @@
       align-items: center;
       justify-content: center;
       position: relative;
-  ">
-    <!-- Site Title -->
-    <h1 class="site-title" style="
-        color: #fff;
+    "
+  >
+    <h1
+      class="site-title"
+      style="
+        color: #ffffff;
         font-size: 2rem;
-        text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+        line-height: 1.3;
+        text-align: center;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
         position: relative;
         z-index: 2;
+        margin: 0;
         padding: 1rem 2rem;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0, 0, 0, 0.5);
         border-radius: 8px;
-    ">
+      "
+    >
       {{ site.title | escape }}
     </h1>
   </div>
 
-  <!-- Navigation Bar -->
- <nav class="main-nav" style="
-    background: #323232;  <!-- Your exact color -->
-    border-bottom: 1px solid var(--border);
-    padding: 1rem 0;
-">
-    <div class="nav-container" style="
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 2rem;
-        display: flex;
-        justify-content: center;
-    ">
-      {%- assign page_paths = site.header_pages | default: nil -%}
-      {%- if page_paths -%}
-        <div class="nav-links" style="
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        ">
-          {%- for path in page_paths -%}
-            {%- assign page = site.pages | where: "path", path | first -%}
-            {%- if page.title -%}
-              <a href="{{ page.url | relative_url }}" style="
-                  color: var(--text);
-                  text-decoration: none;
-                  font-weight: 500;
-                  padding: 0.5rem 0;
-                  border-bottom: 2px solid transparent;
-                  transition: all 0.3s ease;
-                  {% if page.url == page.url %}border-color: var(--accent);{% endif %}
-              ">
-                {{ page.title | escape }}
+  <!-- Main Navigation -->
+  <nav class="main-nav" aria-label="Main navigation">
+    <div class="nav-container">
+
+      <!-- Mobile Menu Button -->
+      <button
+        class="mobile-menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span class="mobile-menu-icon" aria-hidden="true">☰</span>
+        <span>Menu</span>
+      </button>
+
+      <!-- Navigation Items -->
+      <ul class="nav-menu" id="primary-navigation">
+
+        {% for item in site.navigation %}
+
+          <li
+            class="
+              nav-item
+              {% if item.children %}has-dropdown{% endif %}
+            "
+          >
+
+            {% if item.children %}
+
+              <!-- Dropdown Parent -->
+              <button
+                class="nav-link dropdown-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                <span>{{ item.title | escape }}</span>
+
+                <span
+                  class="dropdown-arrow"
+                  aria-hidden="true"
+                >
+                  ▾
+                </span>
+              </button>
+
+            {% else %}
+
+              <!-- Normal Navigation Link -->
+              <a
+                class="
+                  nav-link
+                  {% if page.url == item.url %}active{% endif %}
+                "
+                href="{{ item.url | relative_url }}"
+                {% if page.url == item.url %}
+                  aria-current="page"
+                {% endif %}
+              >
+                {{ item.title | escape }}
               </a>
-            {%- endif -%}
-          {%- endfor -%}
-        </div>
-      {%- endif -%}
+
+            {% endif %}
+
+            {% if item.children %}
+
+              <!-- Dropdown Menu -->
+              <ul
+                class="dropdown-menu"
+                aria-label="{{ item.title | escape }} submenu"
+              >
+
+                {% for child in item.children %}
+
+                  <li class="dropdown-item">
+                    <a
+                      class="
+                        dropdown-link
+                        {% if page.url == child.url %}active{% endif %}
+                      "
+                      href="{{ child.url | relative_url }}"
+                      {% if page.url == child.url %}
+                        aria-current="page"
+                      {% endif %}
+                    >
+                      {{ child.title | escape }}
+                    </a>
+                  </li>
+
+                {% endfor %}
+
+              </ul>
+
+            {% endif %}
+
+          </li>
+
+        {% endfor %}
+
+      </ul>
+
     </div>
   </nav>
+
 </header>
 
 <style>
-  /* Mobile Responsiveness */
+  /*
+   * Hero section
+   */
+
+  .hero-section {
+    min-height: 300px;
+  }
+
+  .site-title {
+    max-width: 1000px;
+  }
+
+  /*
+   * Mobile hero adjustments only.
+   * Navigation styling belongs in assets/css/style.scss.
+   */
+
   @media (max-width: 768px) {
     .hero-section {
-      min-height: 200px;
-    }
-    .site-title {
-      font-size: 2rem;
-      padding: 0.75rem 1.5rem;
-    }
-    .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
+      min-height: 200px !important;
       padding: 1rem;
-      background: var(--card-bg);
-      border-radius: 4px;
     }
-    .main-nav {
-      padding: 0.5rem 0;
+
+    .site-title {
+      font-size: 1.5rem !important;
+      padding: 0.75rem 1rem !important;
     }
   }
 </style>
