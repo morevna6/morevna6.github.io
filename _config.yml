@@ -1,24 +1,46 @@
-title: Günışığı Aydoğan | Independent Researcher in Cognitive Systems & AI | Data Analyst | Computer Programmer 
+title: Günışığı Aydoğan | Independent Researcher in Cognitive Systems & AI | Data Analyst | Computer Programmer
 description: My projects, thoughts, and experiments
-theme: minima
 
+theme: minima
 markdown: kramdown
+
 kramdown:
   input: GFM
 
-# Remove these if present:
-# plugins:
-#   - jekyll-feed
+navigation:
+  - title: Home
+    url: /
 
-header_pages:
-  - index.md
-  - momentum.md
-  - prototypes.md
-  - releases.md
-  - paths-of-destiny.md
-  - lablog.md
-  - about.md
-  - contact.md
+  - title: Research
+    children:
+      - title: AMOC Research
+        url: /research/amoc/
+      - title: Healthcare & Pharma
+        url: /research/healthcare-pharma/
+      - title: Momentum
+        url: /momentum/
+
+  - title: Projects
+    children:
+      - title: Dupsy
+        url: /projects/dupsy/
+      - title: GA4 E-commerce Dashboard
+        url: /projects/ga4-ecommerce/
+      - title: World Cup 2026 Dashboard
+        url: /projects/world-cup-2026/
+      - title: Facebook Ads Analysis
+        url: /projects/facebook-ads/
+      - title: Superstore Dashboard
+        url: /projects/superstore/
+
+  - title: Articles
+    url: /lablog/
+
+  - title: About
+    url: /about/
+
+  - title: Contact
+    url: /contact/
 
 footer_pages:
   - about.md
